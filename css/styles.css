@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Reenie+Beanie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 body {
     background-color: pink;
@@ -23,19 +23,6 @@ main {
     animation: heart-beat 1s infinite;
 }
 
-.fa-heart::after {
-    display: none;
-    content: "";
-    position: absolute;
-    background-color: hsla(0, 0%, 0%, 0.17);
-    border-radius: 50%;
-    filter: blur(3px);
-    height: 9px;
-    width: 90px;
-    bottom: -45px;
-    left: 43%;
-}
-
 #shadow {
     background-color: hsla(0, 0%, 0%, 0.17);
     border-radius: 50%;
@@ -52,15 +39,6 @@ main {
     letter-spacing: normal;
     transform: rotate(-3deg);
     text-transform: none;
-
-    /*
-    font-family: "Reenie Beanie", cursive;
-    font-size: 300%;
-    font-weight: 100;
-    letter-spacing: -3px;
-    transform: none;
-    text-transform: lowercase;
-    */
 
     color: hsla(0, 0%, 0%, 0.91);
 }
