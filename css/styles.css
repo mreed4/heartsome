@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Reenie+Beanie&display=swap");
+
+body {
+    background-color: pink;
+    font-size: 1.25em;
+    text-align: center;
+    user-select: none;
+}
+
+main {
+    margin: 0 auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-heart {
+    display: block;
+    font-size: 600%;
+    color: palevioletred;
+    animation: heart-beat 1s infinite;
+}
+
+.fa-heart::after {
+    display: none;
+    content: "";
+    position: absolute;
+    background-color: hsla(0, 0%, 0%, 0.17);
+    border-radius: 50%;
+    filter: blur(3px);
+    height: 9px;
+    width: 90px;
+    bottom: -45px;
+    left: 43%;
+}
+
+#shadow {
+    background-color: hsla(0, 0%, 0%, 0.17);
+    border-radius: 50%;
+    filter: blur(3px);
+    margin: 30px auto 9px;
+    height: 9px;
+    width: 90px;
+}
+
+#name {
+    font-family: "Permanent Marker", cursive;
+    font-size: 500%;
+    font-weight: normal;
+    letter-spacing: normal;
+    transform: rotate(-3deg);
+    text-transform: none;
+
+    /*
+    font-family: "Reenie Beanie", cursive;
+    font-size: 300%;
+    font-weight: 100;
+    letter-spacing: -3px;
+    transform: none;
+    text-transform: lowercase;
+    */
+
+    color: hsla(0, 0%, 0%, 0.91);
+}
+
+#name > span {
+    display: inline-block;
+    letter-spacing: -6px;
+    margin-left: -9px;
+}
+
+@keyframes heart-beat {
+    0% {
+        transform: scale(1);
+    }
+    8% {
+        transform: scale(0.98);
+        color: hotpink;
+    }
+    17% {
+        transform: scale(1.02);
+        color: palevioletred;
+    }
+    25% {
+        transform: scale(0.98);
+        color: hotpink;
+    }
+    87.5% {
+        transform: scale(0.98);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
